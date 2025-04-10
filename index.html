@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TrendTrove.com</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/templatemo.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <style>
+      .bg-light {
+        background-color: #e9eef5 !important;
+        max-width: 2560px !important;
+      }
+      .align-items-center {
+        align-items: center !important;
+        padding: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Modern Navbar -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .full-width-section {
+        width: 100%;
+        height: 100vh; /* Adjust based on preference */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .full-width-section img {
+        width: 325px;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: 0.3s;
+      }
+      .navbar a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+      }
+      .menu {
+        display: flex;
+        gap: 15px;
+      }
+      .menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+      }
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: #1e1e2f;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        left: 0;
+        padding: 15px;
+        z-index: 1000;
+      }
+
+      .mobile-menu a {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        display: block;
+      }
+      @media (max-width: 768px) {
+        .menu {
+          display: none;
+        }
+        .menu-toggle {
+          display: block;
+        }
+        .mobile-menu.active {
+          display: flex;
+        }
+      }
+    </style>
+
+    <nav class="navbar">
+      <a href="index.html" class="logo">TrendTrove </a>
+      <div class="menu">
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="privacy-policy.html">PRIVACY POLICY</a>
+        <a href="terms.html">TERMS & CONDITIONS</a>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="privacy-policy.html">PRIVACY POLICY</a>
+      <a href="terms.html">TERMS & CONDITIONS</a>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("active");
+      }
+    </script>
+
+    <!-- Modal -->
+    <div
+      class="modal fade bg-white"
+      id="templatemo_search"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="w-100 pt-1 mb-5 text-right">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <form
+          action=""
+          method="get"
+          class="modal-content modal-body border-0 p-0"
+        >
+          <div class="input-group mb-2">
+            <input
+              type="text"
+              class="form-control"
+              id="inputModalSearch"
+              name="q"
+              placeholder="Search ..."
+            />
+            <button
+              type="submit"
+              class="input-group-text bg-success text-light"
+            >
+              <i class="fa fa-fw fa-search text-white"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Start Banner Hero -->
+    <div
+      id="template-mo-zay-hero-carousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#template-mo-zay-hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li
+          data-bs-target="#template-mo-zay-hero-carousel"
+          data-bs-slide-to="1"
+        ></li>
+        <li
+          data-bs-target="#template-mo-zay-hero-carousel"
+          data-bs-slide-to="2"
+        ></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/banner_img_01.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left align-self-center">
+                  <h1 class="h1 text-success"><b>TrendTrove</b></h1>
+                  <h3 class="h2">Perfect For Perfectionist</h3>
+                  <p>
+                    TrendTrove is a modern and stylish fashion website designed
+                    with the latest HTML5 and Bootstrap 5 framework. It’s
+                    crafted to provide a seamless shopping experience with a
+                    clean layout, responsive design, and eye-catching visuals.
+                    All images used are for demonstration purposes and enhance
+                    the overall aesthetic of the brand.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/frank-flores-eyFcZLLYvfA-unsplash-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                  <h1 class="h1">Discover Your Style</h1>
+                  <h3 class="h2">Fashion that speaks for you</h3>
+                  <p>
+                    Explore our carefully curated collection designed for those
+                    who value elegance, comfort, and individuality. Whether it's
+                    a casual outing or a bold fashion statement, we have
+                    something to elevate your wardrobe.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row p-5">
+              <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                <img
+                  class="img-fluid"
+                  src="./assets/img/faith-yarn-Wr0TpKqf26s-unsplash-removebg-preview.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-lg-6 mb-0 d-flex align-items-center">
+                <div class="text-align-left">
+                  <h1 class="h1">Redefine Elegance</h1>
+                  <h3 class="h2">Crafted for your unique expression</h3>
+                  <p>
+                    Dive into a world where style meets sophistication. Our
+                    fashion selections are designed to inspire confidence and
+                    individuality, helping you stand out effortlessly in every
+                    moment.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev text-decoration-none w-auto ps-3"
+        href="#template-mo-zay-hero-carousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a
+        class="carousel-control-next text-decoration-none w-auto pe-3"
+        href="#template-mo-zay-hero-carousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+      <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+          <h1 class="h1">This Month’s Style Picks</h1>
+          <p>
+            Discover our handpicked fashion essentials for the month—bold,
+            elegant, and always on trend. Curated just for your standout
+            moments.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 p-5 mt-3">
+          <a href="#"
+            ><img
+              src="./assets/img/category_img_01.jpg"
+              class="rounded-circle img-fluid border"
+          /></a>
+          <h5 class="text-center mt-3 mb-3">Watches</h5>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+          <a href="#"
+            ><img
+              src="./assets/img/category_img_02.jpg"
+              class="rounded-circle img-fluid border"
+          /></a>
+          <h2 class="h5 text-center mt-3 mb-3">Shoes</h2>
+        </div>
+        <div class="col-12 col-md-4 p-5 mt-3">
+          <a href="#"
+            ><img
+              src="./assets/img/category_img_03.jpg"
+              class="rounded-circle img-fluid border"
+          /></a>
+          <h2 class="h5 text-center mt-3 mb-3">Fashion Accessories</h2>
+        </div>
+      </div>
+    </section>
+    <!-- End Categories of The Month -->
+    <section class="full-width-section" id="continue">
+      <img src="continue.jpeg" alt="Continue" />
+    </section>
+    <!-- About Us Section 2 -->
+    <section class="container py-5 bg-light mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="assets/img/eduardo-pastor-3oejsU5OQVk-unsplash-removebg-preview.png"
+            class="img-fluid rounded"
+            alt="Our Mission"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h2>Our Vision</h2>
+          <p>
+            We aim to redefine fashion accessibility, making trendy, quality
+            apparel available to everyone. At TrendTrove, fashion isn’t just
+            clothing—it’s a statement.
+            <br /><br />
+            Our goal is to inspire confidence through every stitch and
+            silhouette. We believe everyone deserves to feel stylish, no matter
+            their background. Sustainability and ethical sourcing are at the
+            heart of our production. We constantly innovate to stay ahead of
+            fashion trends and customer expectations. Our designs speak to
+            individuality and the power of self-expression. We support local
+            artists and creators through exclusive collaborations. TrendTrove is
+            more than a brand—it's a movement toward inclusive fashion. Join us
+            on this journey of creativity, authenticity, and boldness.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="full-width-section" id="download">
+      <img src="download.jpeg" alt="Download" />
+    </section>
+    <!-- Contact Us Form - Full Width with Sky Blue Gradient -->
+    <section
+      class="py-5 mt-5 mb-5"
+      style="
+        background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+        width: 100%;
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="p-5 bg-white shadow rounded">
+              <h2 class="text-center mb-4 text-dark">Contact Us</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label text-dark"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control rounded-pill"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-dark"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control rounded-pill"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label text-dark"
+                    >Your Message</label
+                  >
+                  <textarea
+                    class="form-control rounded"
+                    id="message"
+                    rows="5"
+                    placeholder="Type your message..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-dark px-4 rounded-pill">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Featured Product -->
+    <section class="bg-light">
+      <div class="container py-5">
+        <div class="row text-center py-3">
+          <div class="col-lg-6 m-auto">
+            <h1 class="h1">Featured Collection</h1>
+            <p>
+              Explore our hand-selected fashion pieces that blend luxury with
+              everyday style. Perfectly crafted for modern elegance.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="shop-single.html">
+                <img
+                  src="./assets/img/feature_prod_01.jpg"
+                  class="card-img-top"
+                  alt="Elegant Blazer"
+                />
+              </a>
+              <div class="card-body">
+                <div class="d-flex justify-content-end mb-2">
+                  <span class="text-muted">$129.00</span>
+                </div>
+                <a
+                  href="shop-single.html"
+                  class="h2 text-decoration-none text-dark"
+                  >Elegant Blazer</a
+                >
+                <p class="card-text">
+                  Tailored for perfection, this blazer is your go-to for a
+                  polished and powerful look.
+                </p>
+                <p class="text-muted">Reviews (17)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="shop-single.html">
+                <img
+                  src="./assets/img/feature_prod_02.jpg"
+                  class="card-img-top"
+                  alt="Cloudwalk Sneakers"
+                />
+              </a>
+              <div class="card-body">
+                <div class="d-flex justify-content-end mb-2">
+                  <span class="text-muted">$149.00</span>
+                </div>
+                <a
+                  href="shop-single.html"
+                  class="h2 text-decoration-none text-dark"
+                  >Cloudwalk Sneakers</a
+                >
+                <p class="card-text">
+                  Walk on clouds with our latest sneaker drop — where comfort
+                  meets cutting-edge style.
+                </p>
+                <p class="text-muted">Reviews (23)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+              <a href="shop-single.html">
+                <img
+                  src="./assets/img/feature_prod_03.jpg"
+                  class="card-img-top"
+                  alt="Designer Tote"
+                />
+              </a>
+              <div class="card-body">
+                <div class="d-flex justify-content-end mb-2">
+                  <span class="text-muted">$199.00</span>
+                </div>
+                <a
+                  href="shop-single.html"
+                  class="h2 text-decoration-none text-dark"
+                  >Designer Tote</a
+                >
+                <p class="card-text">
+                  Crafted with premium materials, this tote bag is both
+                  functional and fabulous.
+                </p>
+                <p class="text-muted">Reviews (31)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Featured Product -->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="TrendTrove_footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center text-light py-4">
+            <p>
+              Powered By
+              <a rel="sponsored" href="#" target="_blank" class="text-light"
+                >TrendTrove</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+  </body>
+</html>

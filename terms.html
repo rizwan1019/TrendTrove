@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TrendTrove.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <style>
+        .bg-light {
+    background-color: #e9eef5 !important;
+    max-width: 2560px !important;
+}
+.align-items-center {
+    align-items: center!important;
+    padding: 100px;
+}
+    </style>
+    
+</head>
+
+
+
+<body>
+ <!-- Modern Navbar -->
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+    .menu {
+      display: flex;
+      gap: 15px;
+    }
+    .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+    }
+    .mobile-menu {
+      display: none;
+      flex-direction: column;
+      background: #1e1e2f;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      left: 0;
+      padding: 15px;
+      z-index: 1000;
+    }
+    .mobile-menu a {
+      padding: 10px;
+      text-align: center;
+      color: white;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .mobile-menu.active {
+        display: flex;
+      }
+    }
+  </style>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">TrendTrove </a>
+    <div class="menu">
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="privacy-policy.html">PRIVACY POLICY</a>
+      <a href="terms.html">TERMS & CONDITIONS</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="privacy-policy.html">PRIVACY POLICY</a>
+    <a href="terms.html">TERMS & CONDITIONS</a>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+    </script>
+
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Terms & Conditions Page -->
+<section class="container py-5">
+    <h1 class="mb-4 fw-bold text-center">Terms & Conditions</h1>
+    <p><strong>Last Updated:</strong> April 2025</p>
+
+    <p>Welcome to TrendTrove. These Terms & Conditions outline the rules and regulations for the use of our website and services. By accessing this website, you accept these terms in full. If you disagree with any part, please do not use our website.</p>
+
+    <h4 class="mt-4">1. Use of the Website</h4>
+    <p>You agree to use TrendTrove’s website only for lawful purposes. You must not use it in any way that may cause damage, interruption, or impairment of the website’s availability or accessibility.</p>
+
+    <h4 class="mt-4">2. Intellectual Property</h4>
+    <p>All content, including logos, designs, text, graphics, and images, is the property of TrendTrove and is protected by applicable copyright and trademark laws. You may not reproduce or distribute any content without prior written permission.</p>
+
+    <h4 class="mt-4">3. Account Responsibility</h4>
+    <p>If you create an account on our website, you are responsible for maintaining its confidentiality and for all activities that occur under your account. Please notify us immediately of any unauthorized use.</p>
+
+    <h4 class="mt-4">4. Product Descriptions & Pricing</h4>
+    <p>We strive to ensure all product information, images, and pricing are accurate. However, errors may occur. TrendTrove reserves the right to correct any errors and to update product details at any time without notice.</p>
+
+    <h4 class="mt-4">5. Returns & Refunds</h4>
+    <p>Returns and refunds are governed by our <a href="return-policy.html">Return Policy</a>. By purchasing, you agree to the terms outlined there.</p>
+
+    <h4 class="mt-4">6. Limitation of Liability</h4>
+    <p>TrendTrove shall not be held liable for any indirect, incidental, or consequential damages arising out of your use or inability to use the website or any of our products.</p>
+
+    <h4 class="mt-4">7. Changes to Terms</h4>
+    <p>We reserve the right to modify these terms at any time. Continued use of the website after changes implies your acceptance of the updated terms.</p>
+
+    <h4 class="mt-4">8. Governing Law</h4>
+    <p>These Terms & Conditions are governed by the laws of [Your Country/Region], and any disputes will be subject to the exclusive jurisdiction of the courts therein.</p>
+
+    <p class="mt-4">If you have any questions, feel free to contact us at <a href="mailto:support@trendtrove.com">support@trendtrove.com</a>.</p>
+</section>
+
+<!-- Start Footer -->
+<footer class="bg-dark" id="TrendTrove_footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center text-light py-4">
+                <p>
+                    Powered By <a rel="sponsored" href="#" target="_blank" class="text-light">TrendTrove</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
